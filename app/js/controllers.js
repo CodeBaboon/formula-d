@@ -31,20 +31,20 @@ angular.module('myApp.controllers', [])
 
       $scope.login = function(cb) {
          $scope.err = null;
-         if( !$scope.email ) {
-            $scope.err = 'Please enter an email address';
-         }
-         else if( !$scope.pass ) {
-            $scope.err = 'Please enter a password';
-         }
-         else {
+//         if( !$scope.email ) {
+//            $scope.err = 'Please enter an email address';
+//         }
+//         else if( !$scope.pass ) {
+//            $scope.err = 'Please enter a password';
+//         }
+//         else {
             loginService.login($scope.email, $scope.pass, function(err, user) {
                $scope.err = err? err + '' : null;
                if( !err ) {
                   cb && cb(user);
                }
             });
-         }
+//         }
       };
 
       $scope.createAccount = function() {
