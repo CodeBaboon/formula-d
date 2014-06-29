@@ -2,24 +2,18 @@
 <h2>Login Page</h2>
 
 <form>
-    <!--<label>-->
-        <!--<span>email</span>-->
-        <!--<input type="text" ng-model="email" />-->
-    <!--</label>-->
-    <!--<label>-->
-        <!--<span>password</span>-->
-        <!--<input type="password" ng-model="pass" />-->
-    <!--</label>-->
-    <!--<label ng-cloak ng-show="createMode">-->
-        <!--<span>confirm pass</span>-->
-        <!--<input type="password" ng-model="confirm" />-->
-    <!--</label>-->
-    <button ng-click="login('google')" ng-hide="createMode">Google Log In</button>
-    <button ng-click="login('facebook')" ng-hide="createMode">Facebook Log In</button>
-    <button ng-click="login('twitter')" ng-hide="createMode">Twitter Log In</button>
-    <!--<button ng-click="createMode = true" ng-hide="createMode">Register</button>-->
-    <!--<button ng-cloak ng-show="createMode" ng-click="createAccount()">Create Account</button>-->
-    <button ng-cloak ng-show="createMode" ng-click="createMode = false">Cancel</button>
+    <a href="#" class="btn btn-default btn-large" title="Log in with Google" ng-click="login('google')">
+        <img src="/app/img/auth/google.png" />
+        <span>Log in with Google</span>
+    </a>
+    <a href="#" class="btn btn-default" title="Log in with Facebook" ng-click="login('facebook')">
+        <img src="/app/img/auth/facebook.png" />
+        <span>Log in with Facebook</span>
+    </a>
+    <a href="#" class="btn btn-default btn-large" title="Log in with Twitter" ng-click="login('twitter')">
+        <img src="/app/img/auth/twitter.png" />
+        <span>Log in with Twitter</span>
+    </a>
 
     <p ng-show="err" class="error">{{err}}</p>
 </form>
