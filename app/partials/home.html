@@ -1,7 +1,91 @@
-<h2>Home</h2>
+<div class="header alt vert">
+    <div class="container">
+        <h1>Formula D</h1>
+        <p class="lead">The action-packed game of Formula 1 and road races!</p>
+        <div>&nbsp;</div>
+        <a href="#/login" ng-show-auth="logout,error" class="btn btn-default btn-lg">Get Started</a>
+        <a href="#" ng-show-auth="login" class="btn btn-default btn-lg">Get Started</a>
+    </div>
+</div>
 
-<p class="status good" ng-show-auth="login">Hello! You are logged in.</p>
-<p class="status" ng-show-auth="logout">Not logged in</p>
-<p class="status error" ng-show-auth="error">{{auth.error}}</p>
+<div class="blurb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Race with your friends</h1>
+                <p class="lead">Roll your path to victory</p>
+            </div>
+            <div class="col-md-5">
+                <h1 class="pull-right">
+                    <img src="img/box-art.jpg" />
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
 
-<input ng-show-auth="login" ng-model="syncedValue" type="text" /> <b>{{syncedValue}}</b>
+
+<div class="featurette" id="sec2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Amazing Features</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-group"></i>
+                    <h4>Players</h4>
+                    <p>Up to 10 friends can race at the same time.</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-road"></i>
+                    <h4>Tracks</h4>
+                    <p>Multiple tracks provide lots of variety.</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-dashboard"></i>
+                    <h4>Rules</h4>
+                    <p>Keep it simple or go advanced. Rules for everyone.</p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="featurette-item">
+                    <i class="fa fa-cubes"></i>
+                    <h4>Dice</h4>
+                    <p>7 custom dice. Because dice rule.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <hr>
+                <p>Formula D v<span app-version></span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<ul class="nav pull-right scroll-down">
+    <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
+</ul>
+<ul class="nav pull-right scroll-top">
+    <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
+</ul>
+
+<!--<p class="text-success" ng-show-auth="login">Hello! You are logged in.</p>-->
+<!--<p class="text-warning" ng-show-auth="logout">Not logged in</p>-->
+<!--<p class="text-danger" ng-show-auth="error">{{auth.error}}</p>-->
+
+<!--<input ng-show-auth="login" ng-model="syncedValue" type="text" /> <b>{{syncedValue}}</b>-->

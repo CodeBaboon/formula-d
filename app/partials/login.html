@@ -1,20 +1,46 @@
+<hr>
 
-<h2>Login Page</h2>
+<div class="gallery">
 
-<form>
-    <a href="#" class="btn btn-default btn-large" title="Log in with Google" ng-click="login('google')">
-        <img src="img/auth/google.png" />
-        <span>Log in with Google</span>
-    </a>
-    <a href="#" class="btn btn-default" title="Log in with Facebook" ng-click="login('facebook')">
-        <img src="img/auth/facebook.png" />
-        <span>Log in with Facebook</span>
-    </a>
-    <a href="#" class="btn btn-default btn-large" title="Log in with Twitter" ng-click="login('twitter')">
-        <img src="img/auth/twitter.png" />
-        <span>Log in with Twitter</span>
-    </a>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <h5>Choose your preferred authorization provider</h5>
+            <h2>Who are you?</h2>
+            <br>
+        </div>
+    </div>
 
-    <p ng-show="err" class="error">{{err}}</p>
-</form>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#" class="btn btn-default" title="Log in with Google" ng-click="login('google')">
+                        <img src="img/auth/google.png" />
+                        <span>Log in with Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#" class="btn btn-default" title="Log in with Facebook" ng-click="login('facebook')">
+                        <img src="img/auth/facebook.png" />
+                        <span>Log in with Facebook</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="list-group">
+                    <a href="#" class="btn btn-default" title="Log in with Twitter" ng-click="login('twitter')">
+                        <img src="img/auth/twitter.png" />
+                        <span>Log in with Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
