@@ -35,11 +35,19 @@ angular.module('myApp.controllers', [])
    .controller('AccountCtrl', ['$scope', 'loginService', 'syncData', '$location', function($scope, loginService, syncData, $location) {
       syncData(['users', $scope.auth.user.uid]).$bind($scope, 'user');
 
-      $scope.logout = function() {
-         loginService.logout();
-      };
+        $scope.logout = function() {
+            loginService.logout();
+        };
 
-      $scope.oldpass = null;
+        $scope.oldpass = null;
+
+        if ($scope.auth.user.provider === 'google') {
+            $scope.pictureUrl = $scope.auth.user.thirdPartyUserData.picture;
+        } else if ($scope.auth.user.provider === 'twitter') {
+            $scope.pictureUrl = $scope.auth.user.thirdPartyUserData.profile_image_url_https;
+        } else {
+            $scope.pictureUrl = "img/user-icon.png";
+        }
       $scope.newpass = null;
       $scope.confirm = null;
 

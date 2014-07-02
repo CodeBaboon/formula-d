@@ -1,4 +1,14 @@
+<div class="blurb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <h1 class="pull-right"><img class="img-circle img-profile" ng-src="{{pictureUrl}}"/></h1>
+            </div>
+            <div class="col-md-11">
+                <h1>{{auth.user.displayName}}</h1>
+                <button class="btn btn-default" ng-click="logout()">Log Out</button>
+            </div>
 
-<h2>Account</h2>
-
-<button class="btn btn-default" ng-click="logout()">Log Out</button>
+        </div>
+    </div>
+</div>
