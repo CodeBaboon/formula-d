@@ -24,3 +24,9 @@ fieldset {
     width: 48px;
     height: 48px;
 }
+
+.game-board {
+    margin: 60px 10px;
+    width: 1740px;
+    height: 1162px;
+}

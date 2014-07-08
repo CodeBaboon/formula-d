@@ -7,19 +7,6 @@
          ".write": true,
          ".validate": "newData.isString() && newData.val().length <= 100"
       },
-      "messages": {
-         ".read": true,
-         "$message": {
-            ".write": true,
-            ".validate": "newData.hasChildren(['text'])",
-            "text": {
-               ".validate": "newData.isString() && newData.val().length <= 1000"
-            },
-            "$other": {
-               ".validate": false
-            }
-         }
-      },
       "users": {
          "$user": {
             ".read": "auth.uid === $user",
